@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.overlay:before{
+  content: "\00d7";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #FFF;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+p.pg {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  border-radius: 5px;
+  background: #CCC;
+  padding: 10px;
+  margin: 5px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+p.pg:hover {
+  background: #999;
+  cursor: pointer;
+}
+
